@@ -14,3 +14,28 @@
 .photo{
     transform: translateY(25px);
 }
+
+.features{
+    /* position: relative; */
+    z-index: 99;
+    /* clip-path: polygon(0 32%, 100% 51%, 100% 100%, 0% 100%); */
+    background: white;
+    overflow: hidden;
+}
+
+.hover{
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+    height: 0%;
+    width: 115%;
+    background: black;
+    transition: 0.4s;
+    opacity: 0;
+    transform: rotate(5deg);
+
+}
+
+.features:hover .hover{
+    height: 60%;
+}
